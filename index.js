@@ -22,7 +22,6 @@ for (let index = 0; index < l2_balls.length; index++) {
     ball.style.top = top_num + "px";
     ball.style.left = left_num + "px";
     size += 5;
-    console.log(ball);
 }
 
 size = 0;
@@ -34,5 +33,4 @@ for (let index = 0; index < l3_balls.length; index++) {
     ball.style.top = top_num + "px";
     ball.style.left = left_num + "px";
     size += 5;
-    console.log(ball);
 }
