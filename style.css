@@ -63,3 +63,170 @@ body {
     margin-top: -20px;
     border-radius: 4px;
 }
+/* ============================= New CSS */
+.ball{
+    position: relative;
+    border-radius: 100%;
+
+    height: 10px;
+    width: 10px;
+
+    z-index: 1;
+    
+}
+
+.star{
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+
+    align-content: center;
+    top: -15px;
+    left: 50%;
+}
+
+.star-glow{
+    animation: star_glow 5s ease-in-out 0s infinite normal;
+    height: 10px;
+
+    position: relative;
+    left: -2px;
+    top: -4px;
+}
+
+.star p{
+    position: relative;
+    top: -20px;
+    left: -11px;
+
+    cursor:pointer;
+}
+
+.star a{
+    text-decoration: none;
+    color: gold;
+}
+
+.red{
+    background-color: red;
+    animation: red_ball_glow 10s ease-in-out 0s infinite normal;
+}
+
+.green{
+    background-color: rgb(8, 138, 8);
+    animation: green_ball_glow 5s ease-in-out 0s infinite normal;
+}
+
+.blue{
+    background-color: blue;
+    animation: blue_ball_glow 7s ease-in-out 0s infinite normal;
+}
+
+.tree{
+    position: relative;
+    z-index: 6 !important;
+
+    height: 100%;
+    align-content: center;
+}
+/* New CSS ============================= */
+
+@keyframes blue_ball_glow {
+    0%{
+        box-shadow: 0px 0px 7px 3px rgb(143, 148, 255);
+        background-color: rgb(158, 158, 255);
+    }
+
+    50%{
+        box-shadow: 0px 0px 0px 0px rgb(50, 64, 252);
+        background-color: blue;
+    }
+
+    100%{
+        box-shadow: 0px 0px 7px 3px rgb(143, 148, 255);
+        background-color: rgb(158, 158, 255);
+    }
+}
+
+@keyframes red_ball_glow {
+    0%{
+        box-shadow: 0px 0px 7px 3px rgb(255, 114, 114);
+        background-color: rgb(255, 156, 156);
+    }
+
+    50%{
+        box-shadow: 0px 0px 0px 0px rgba(255, 46, 88, 1);
+        background-color: red;
+    }
+
+    100%{
+        box-shadow: 0px 0px 7px 3px rgb(255, 114, 114);
+        background-color: rgb(255, 156, 156);
+    }
+}
+
+@keyframes green_ball_glow {
+    0%{
+        box-shadow: 0px 0px 7px 3px rgb(124, 255, 142);
+        background-color: rgb(176, 255, 168);
+    }
+
+    50%{
+        box-shadow: 0px 0px 0px 0px rgb(50, 122, 16);
+        background-color: rgb(8, 138, 8);
+    }
+
+    100%{
+        box-shadow: 0px 0px 7px 3px rgb(124, 255, 142);
+        background-color: rgb(176, 255, 168);
+    }
+}
+
+@keyframes star_glow {
+    0%{
+        box-shadow: 0px 0px 30px 15px rgb(255, 245, 104);
+        background-color: rgb(255, 243, 137);
+    }
+
+    50%{
+        box-shadow: 0px 0px 0px 0px gold;;
+        color: gold;
+    }
+
+    100%{
+        box-shadow: 0px 0px 30px 15px rgb(255, 245, 104);
+        background-color: rgb(255, 243, 137);
+    }
+}
+
+/* ============================= START */
+/* 
+.explosion{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    z-index: 1000;
+}
+
+.explosion-con{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    color: orange;
+}
+
+.explosion-cloud{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 100%;
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+} */
+/* EXPLOSION END ============================= */
